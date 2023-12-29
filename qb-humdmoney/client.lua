@@ -35,9 +35,9 @@ end
 
 
 if Config.Framework == "qbcore" then
-    local PlayerData = QBCore.Functions.GetPlayerData()
+     PlayerData = QBCore.Functions.GetPlayerData()
 elseif Config.Framework == "esx" then
-    local PlayerData = ESX.GetPlayerData()
+     PlayerData = ESX.GetPlayerData()
 end
 
 
