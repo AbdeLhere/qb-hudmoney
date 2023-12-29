@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 --Note : the script support only qbcore  
 Config.Framework = "qbcore" -- you framework ( esx / qbcore / standalone ) note : if standalone please check (client.lua / line: 13)
 --Note : the script support only qbcore  
-Config.qbcorename = "abl-framework" -- your qbcore framework name / default = "qb-core"
+Config.qbcorename = "qb-core" -- your qbcore framework name / default = "qb-core"
 --Note : the script support only qbcore  
 Config.cashcommand = "cash"  -- your cash command
 Config.bankcommand = "bank" -- your bank command
