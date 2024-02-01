@@ -18,29 +18,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 
 ]]
 
-if Config.Framework == "ESX" then
-    ESX = nil
-    CreateThread(function()
-        while ESX == nil do
-            TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
-            Wait(100)
-        end
-    end)
-elseif Config.Framework == "qbcore" then
-   QBCore = nil
-    QBCore = exports[Config.qbcorename]:GetCoreObject()
-elseif Config.Framework == "standalone" then
-    -- ADD YOU FRAMEWORK
-end
-
-
-if Config.Framework == "qbcore" then
-     PlayerData = QBCore.Functions.GetPlayerData()
-elseif Config.Framework == "esx" then
-     PlayerData = ESX.GetPlayerData()
-end
-
-
+local QBCore = exports[Config.qbcorename]:GetCoreObject()
+local PlayerData = QBCore.Functions.GetPlayerData()
 local cashAmount = 0
 local bankAmount = 0
 
